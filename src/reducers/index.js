@@ -1,6 +1,6 @@
-import { combinedReducers } from 'react-redux';
-import postReducer from './postReducer';
+import { combineReducers } from "redux";
+import postReducer from "./postReducers";
 
-export default combinedReducers({
+export default combineReducers({
   posts:postReducer
 });
