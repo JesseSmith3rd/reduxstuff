@@ -1,4 +1,4 @@
-import { FETCH_POST, NEW_POST } from '../actions/types';
+import { FETCH_POSTS, NEW_POST } from '../actions/types';
 
 const initialState = {
   items: [],
@@ -6,7 +6,7 @@ const initialState = {
 }
 
 export default function(state = initialState, action) {
-  switch(acton.type){
+  switch (action.type) {
     default:
       return state;
   }
