@@ -1,13 +1,11 @@
-import { FETCH_POST, NEW_POST } from './types';
+import { FETCH_POSTS, NEW_POST } from './types';
 
-export function fetchPost() {
-  return function(dispatch){
+export const fetchPosts = () => dispatch => {
+  console.log('fetching stuff');
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then(res => res.json())
-    .then(data => dispatch({
-      type: FETCH_POST,
-      payload: post
+    .then(posts => dispatch({
+      type: FETCH_POSTS,
+      payload: posts
     }));
-  }
-  }
-}
+  };
